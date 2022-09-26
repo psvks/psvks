@@ -4,8 +4,12 @@ Im psvks. A 17 yrld roblox exploit developer.
 
 ## What do i do?
 
-I do scripts and sometimes my own exploits or exploit dlls for educational purposes only.  
-I maintain some projects but they where taking down  Ç
+I do scripts and sometimes my own exploits or exploit apis for educational purposes only.  
+I maintain some projects...
+
+## What the fuck
+
+Yeah shut the fuck up alex im not gay
 
 ## My repos..
 
