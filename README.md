@@ -13,4 +13,5 @@ Yeah shut the fuck up alex im not gay
 
 ## My repos..
 
-[notify control](https://github.com/Obstronomic/NotifyControl)
+[notify control](https://github.com/Obstronomic/NotifyControl)  
+[bot-advertiser](https://github.com/psvks/bot-advertiser)  
