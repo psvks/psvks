@@ -9,7 +9,7 @@ I maintain some projects...
 
 ## What the fuck
 
-Yeah shut the fuck up alex im not gay
+Why you read this. I have notthing.
 
 ## My repos..
 
