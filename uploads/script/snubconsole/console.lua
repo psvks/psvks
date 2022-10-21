@@ -86,7 +86,7 @@ function core:CreatePrint(mess: string)
     infos_sffss.Size = UDim2.new(0, 158, 0, 19)
     infos_sffss.Font = Enum.Font.SourceSansBold
     infos_sffss.Text = date.." | INFO:"
-    infos_sffss.TextColor3 = Color3.fromRGB(0, 0, 0)
+    infos_sffss.TextColor3 = Color3.fromRGB(0, 193, 252)
     infos_sffss.TextSize = 14.000
     infos_sffss.TextWrapped = true
     infos_sffss.TextXAlignment = Enum.TextXAlignment.Right
