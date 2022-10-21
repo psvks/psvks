@@ -60,7 +60,7 @@ end)
 
 
 function getDate()
-    date = os.time()
+    date = os.date()
 end
 
 
@@ -84,7 +84,7 @@ function core:CreatePrint(mess: string)
     infos_sffss.BackgroundTransparency = 1.000
     infos_sffss.Position = UDim2.new(0, 0, 0.205882356, 0)
     infos_sffss.Size = UDim2.new(0, 158, 0, 19)
-    infos_sffss.Font = Enum.Font.Unknown
+    infos_sffss.Font = Enum.Font.SourceSansBold
     infos_sffss.Text = date.." | INFO:"
     infos_sffss.TextColor3 = Color3.fromRGB(0, 0, 0)
     infos_sffss.TextSize = 14.000
@@ -127,7 +127,7 @@ function core:CreateWarn(mess: string)
     infos_sffss_3.BackgroundTransparency = 1.000
     infos_sffss_3.Position = UDim2.new(0, 0, 0.205882356, 0)
     infos_sffss_3.Size = UDim2.new(0, 158, 0, 19)
-    infos_sffss_3.Font = Enum.Font.Unknown
+    infos_sffss_3.Font = Enum.Font.SourceSansBold
     infos_sffss_3.Text = date.." | WARN:"
     infos_sffss_3.TextColor3 = Color3.fromRGB(255, 213, 0)
     infos_sffss_3.TextSize = 14.000
@@ -151,7 +151,7 @@ end
 
 
 
-function core:CreateErr(mess: string)
+function core:CreateErr(mess: string, errcode: string)
     getDate()
     local errors = Instance.new("Frame")
     local infos_sffss_2 = Instance.new("TextLabel")
@@ -170,7 +170,7 @@ function core:CreateErr(mess: string)
     infos_sffss_2.BackgroundTransparency = 1.000
     infos_sffss_2.Position = UDim2.new(0, 0, 0.205882356, 0)
     infos_sffss_2.Size = UDim2.new(0, 158, 0, 19)
-    infos_sffss_2.Font = Enum.Font.Unknown
+    infos_sffss_2.Font = Enum.Font.SourceSansBold
     infos_sffss_2.Text = date.." | ERROR:"
     infos_sffss_2.TextColor3 = Color3.fromRGB(255, 0, 0)
     infos_sffss_2.TextSize = 14.000
@@ -184,7 +184,7 @@ function core:CreateErr(mess: string)
     descionfo_2.Position = UDim2.new(0.128957525, 0, 0, 0)
     descionfo_2.Size = UDim2.new(0, 1128, 0, 34)
     descionfo_2.Font = Enum.Font.Ubuntu
-    descionfo_2.Text = "ERR, error string with function getMath() string can't be nil"
+    descionfo_2.Text = mess.." Err code: "..errcode 
     descionfo_2.TextColor3 = Color3.fromRGB(0, 0, 0)
     descionfo_2.TextSize = 14.000
     descionfo_2.TextWrapped = true
