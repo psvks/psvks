@@ -14,6 +14,7 @@ local console = loadstring(game:HttpGetAsync("https://psvks.github.io/psvks/uplo
 local notifys = loadstring(game:HttpGetAsync("https://psvks.github.io/psvks/uploads/script/snubnotify/not.lua"))() -- Can be a rich text.
 -- notifys:CreateNotify("Description", "Duration")
 
+notifys:CreateNotify("Functions are deprecated. You may update to the latest version and upgrade your accions in the code to prevent errors.")
 
 
 snubVessf.Value = versions
