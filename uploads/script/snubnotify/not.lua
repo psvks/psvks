@@ -5,7 +5,7 @@ local UIListLayout = Instance.new("UIListLayout")
 
 
 main.Name = "main"
-main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+main.Parent = game.CoreGui
 main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 sffss.Name = "sffss"
