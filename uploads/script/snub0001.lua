@@ -14,7 +14,7 @@ local console = loadstring(game:HttpGetAsync("https://psvks.github.io/psvks/uplo
 local notifys = loadstring(game:HttpGetAsync("https://psvks.github.io/psvks/uploads/script/snubnotify/not.lua"))() -- Can be a rich text.
 -- notifys:CreateNotify("Description", "Duration")
 
-notifys:CreateNotify("Functions are deprecated. You may update to the latest version and upgrade your accions in the code to prevent errors.")
+notifys:CreateNotify("Functions are deprecated. You may update to the latest version and upgrade your accions in the code to prevent errors. Please check https://kiffros.gitbook.io/snubf/releases/snub-updates/version-0001-build-2 for more info.", 12)
 console:CreateWarn("Please upgrade version! Your snub version is deprecated!")
 
 snubVessf.Value = versions
