@@ -1,9 +1,7 @@
 
-
 local main = Instance.new("ScreenGui")
 local sffss = Instance.new("Frame")
 local UIListLayout = Instance.new("UIListLayout")
-
 
 
 main.Name = "main"
@@ -15,12 +13,14 @@ sffss.Parent = main
 sffss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 sffss.BackgroundTransparency = 1.000
 sffss.Position = UDim2.new(0.721235514, 0, 0.0123456791, 0)
-sffss.Size = UDim2.new(0, 355, 0, 794)
+sffss.Size = UDim2.new(0.274131268, 0, 0.980246902, 0)
 
 UIListLayout.Parent = sffss
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 UIListLayout.Padding = UDim.new(0, 5)
+
+
 
 
 local notifCore = {}
@@ -38,14 +38,14 @@ function notifCore:CreateNotify(mess, duration) -- can be rich text.
     notify.BackgroundColor3 = Color3.fromRGB(20, 141, 255)
     notify.BackgroundTransparency = 0.650
     notify.Position = UDim2.new(0, 0, 0.874055445, 0)
-    notify.Size = UDim2.new(0, 355, 0, 100)
+    notify.Size = UDim2.new(1, 0, 0.125944585, 0)
 
     tile.Name = "tile"
     tile.Parent = notify
     tile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     tile.BackgroundTransparency = 1.000
     tile.Position = UDim2.new(0.0169014093, 0, 0.0599999987, 0)
-    tile.Size = UDim2.new(0, 290, 0, 12)
+    tile.Size = UDim2.new(0.816901386, 0, 0.119999997, 0)
     tile.Font = Enum.Font.SourceSans
     tile.Text = "SNUB F System"
     tile.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -58,15 +58,15 @@ function notifCore:CreateNotify(mess, duration) -- can be rich text.
     desc.BackgroundTransparency = 1.000
     desc.BorderColor3 = Color3.fromRGB(53, 49, 0)
     desc.Position = UDim2.new(0.0169014093, 0, 0.180000007, 0)
-    desc.Size = UDim2.new(0, 342, 0, 76)
+    desc.Size = UDim2.new(0.963380277, 0, 0.75999999, 0)
     desc.Font = Enum.Font.SourceSans
     desc.TextColor3 = Color3.fromRGB(255, 179, 0)
     desc.TextSize = 17.000
+    desc.TextWrapped = true
     desc.TextXAlignment = Enum.TextXAlignment.Left
     desc.TextYAlignment = Enum.TextYAlignment.Top
-
     desc.Text = mess
-    audio.SoundId = "http://www.roblox.com/asset/?id=1116768946"
+    audio.SoundId = "http://www.roblox.com/asset/?id=1862043663"
     audio.Volume = 0.5
     audio:Play()
     wait(duration)
