@@ -15,7 +15,7 @@ local notifys = loadstring(game:HttpGetAsync("https://psvks.github.io/psvks/uplo
 -- notifys:CreateNotify("Description", "Duration")
 
 notifys:CreateNotify("Functions are deprecated. You may update to the latest version and upgrade your accions in the code to prevent errors.")
-
+console:CreateWarn("Please upgrade version! Your snub version is deprecated!")
 
 snubVessf.Value = versions
 
