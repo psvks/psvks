@@ -88,7 +88,7 @@ function core:CreatePrint(mess: string)
     infos_sffss.Text = date.." | INFO:"
     infos_sffss.TextColor3 = Color3.fromRGB(0, 193, 252)
     infos_sffss.TextSize = 14.000
-    infos_sffss.TextWrapped = true
+    infos_sffss.TextWrapped = false
     infos_sffss.TextXAlignment = Enum.TextXAlignment.Right
     
     descionfo.Name = "descionfo"
@@ -131,7 +131,7 @@ function core:CreateWarn(mess: string)
     infos_sffss_3.Text = date.." | WARN:"
     infos_sffss_3.TextColor3 = Color3.fromRGB(255, 213, 0)
     infos_sffss_3.TextSize = 14.000
-    infos_sffss_3.TextWrapped = true
+    infos_sffss_3.TextWrapped = false
     infos_sffss_3.TextXAlignment = Enum.TextXAlignment.Right
     
     descionfo_3.Name = "descionfo"
@@ -174,7 +174,7 @@ function core:CreateErr(mess: string, errcode: string)
     infos_sffss_2.Text = date.." | ERROR:"
     infos_sffss_2.TextColor3 = Color3.fromRGB(255, 0, 0)
     infos_sffss_2.TextSize = 14.000
-    infos_sffss_2.TextWrapped = true
+    infos_sffss_2.TextWrapped = false
     infos_sffss_2.TextXAlignment = Enum.TextXAlignment.Right
 
     descionfo_2.Name = "descionfo"
