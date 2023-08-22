@@ -16,3 +16,4 @@ Why you read this. I have notthing.
 [notify control](https://github.com/Obstronomic/NotifyControl)  
 [bot-advertiser](https://github.com/psvks/bot-advertiser)  
 [music-player](https://github.com/psvks/musplayer)  
+[GFYSelf](https://github.com/psvks/gfyself)  
