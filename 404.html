@@ -2,100 +2,64 @@
 <html>
       <head>
                 <style>
-                  :root {
-                    --light: #edf2f9;
-                    --dark: #152e4d;
-                    --darker: #12263f;
-                  }
-                  
-                  .dark .dark\:text-light {
-                    color: var(--light);
-                  }
-                  
-                  .dark .dark\:bg-dark {
-                    background-color: var(--dark);
-                  }
-                  
-                  .dark .dark\:bg-darker {
-                    background-color: var(--darker);
-                  }
-                  
-                  .dark .dark\:text-gray-300 {
-                    color: #D1D5DB;
-                  }
+                        html {
+                          text-align: center;
+                          color: white;
+                          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                            Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                          box-sizing: border-box;
+                          -moz-text-size-adjust: 100%;
+                          -ms-text-size-adjust: 100%;
+                          -webkit-text-size-adjust: 100%;
+                          background-color: #222;
+                        }
+                        
+                        *,
+                        *:before,
+                        *:after {
+                          box-sizing: inherit;
+                        }
+                        
+                        .travolta {
+                          z-index: -1;
+                          width: 100vw;
+                          height: 100vh;
+                          opacity: 0.3;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          background: url('https://assets-9gag-fun.9cache.com/s/fab0aa49/033037194a549b0bf83e2ac4ba90706a52a9132e/static/dist/web6/img/404/bg.gif') center center no-repeat;
+                          background-size: cover;
+                          background-color: black;
+                        }
+                        
+                        h1 {
+                          font-size: 775%;
+                          padding-top: 25vh;
+                          margin-bottom: 1vh;
+                          z-index: 2;
+                        }
+                        
+                        p {
+                          font-size: 125%;
+                        }
+                        
+                        a {
+                          text-decoration: none;
+                          color: white;
+                          z-index: 2;
+                        }
+                        
+                        a:hover {
+                          text-decoration: underline;
+                        }
+
                 </style>
                 
-                <script>
-                    const setup = () => {
-                    const getTheme = () => {
-                      if (window.localStorage.getItem('dark')) {
-                        return JSON.parse(window.localStorage.getItem('dark'))
-                      }
-                      return !!window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-                    }
-            
-                    const setTheme = (value) => {
-                      window.localStorage.setItem('dark', value)
-                    }
-            
-                    return {
-                      loading: true,
-                      isDark: getTheme(),
-                      toggleTheme() {
-                        this.isDark = !this.isDark
-                        setTheme(this.isDark)
-                      },
-                    }
-                  }
-                </script>
       </head>
       <body>
-            <div x-data="setup()" x-init="$refs.loading.classList.add('hidden');" :class="{ 'dark': isDark }">
-            <!-- Loading screen -->
-            <div
-              x-ref="loading"
-              class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-black bg-opacity-90"
-            >
-              Loading.....
-            </div>
-            <main
-              aria-labelledby="pageTitle"
-              class="flex items-center justify-center h-screen bg-gray-100 dark:bg-dark dark:text-light"
-            >
-              <div class="p-4 space-y-4">
-                <div class="flex flex-col items-start space-y-3 sm:flex-row sm:space-y-0 sm:items-center sm:space-x-3">
-                  <p class="font-semibold text-red-500 text-9xl dark:text-red-600"></p>
-                  <div class="space-y-2">
-                    <h1 id="pageTitle" class="flex items-center space-x-2">
-                      <svg
-                        aria-hidden="true"
-                        class="w-6 h-6 text-red-500 dark:text-red-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                        />
-                      </svg>
-                      <span class="text-xl font-medium text-gray-600 sm:text-2xl dark:text-light">
-                        Ha habido problemas de conexión.
-                      </span>
-                    </h1>
-                    <p class="text-base font-normal text-gray-600 dark:text-gray-300">
-      Parece que el servidor que estás buscando ya no está disponible o ha sido eliminado. Si crees que esto es un error, por favor, ponte en contacto con el administrador del Cloud para obtener asistencia.
-                    </p>
-                    <p class="text-base font-normal text-gray-600 dark:text-gray-300">
-                       
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
+            <h1><a href="#">Error!</a></h1>
+            <p>Parece que el servidor que estás buscando ya no está disponible o ha sido eliminado. Si crees que esto es un error, por favor, ponte en contacto con el administrador del Cloud para obtener asistencia.</p>
+            <div class="travolta"></div>
       </body>
 </html>
