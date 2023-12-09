@@ -1,15 +1,16 @@
 ## Hi there 👋
 
-Im psvks. A 17 yrld roblox exploit developer.
+Im **psvks**. A 18 year old programmer.
 
-## What do i do?
+## What do I do?
 
-I do scripts and sometimes my own exploits or exploit apis for educational purposes only.  
+I make projects just for fun...   
 I maintain some projects...
 
-## My repos..
+## My repositories
 
 [notify control](https://github.com/Obstronomic/NotifyControl)  
 [bot-advertiser](https://github.com/psvks/bot-advertiser)  
 [music-player](https://github.com/psvks/musplayer)  
 [GFYSelf](https://github.com/psvks/gfyself)  
+[YTDownloader](https://github.com/psvks/youtubedownloader)  
